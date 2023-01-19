@@ -24,7 +24,7 @@ body {
   border: 1 solid hsla(0, 0%, 100%, 0.18);
   box-shadow: 0 8px 32px 0 rgb(0 0 0 / 37%);
   margin: 0 auto;
-  max-width: 1240px;
+  max-width: 1290px;
   width: 100%;
   position: relative;
   padding-top: 100px;
@@ -37,7 +37,11 @@ body {
 .header,
 .main,
 .footer {
-  padding: 0 35px;
+  padding: 0 60px;
+
+  @media screen and (max-width: 1220px) {
+    padding: 0 30px;
+  }
 
   @media screen and (max-width: 520px) {
     padding: 0 15px;
@@ -244,6 +248,7 @@ html {
   display: flex;
   position: relative;
   margin-bottom: 100px;
+  padding-bottom: 30px;
 
   @media screen and (max-width: 1078px) {
     flex-direction: column-reverse;
@@ -277,11 +282,11 @@ html {
     max-width: 770px;
     max-height: 407px;
     position: absolute;
-    top: 64px;
+    top: 86px;
     right: 0;
 
-    @media screen and (max-width: 1200px) {
-      max-width: 650px;
+    @media screen and (max-width: 1220px) {
+      max-width: 690px;
     }
 
     @media screen and (max-width: 1078px) {
@@ -346,7 +351,7 @@ html {
     font-size: 4.44rem;
     line-height: 110%;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1220px) {
       font-size: 3rem;
     }
 
@@ -403,7 +408,7 @@ html {
     right: 323px;
     z-index: 10;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1220px) {
       max-width: 200px;
       right: 300px;
     }
@@ -425,7 +430,7 @@ html {
   overflow: hidden;
   border: 1px dashed #b78ef0;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1220px) {
     width: 350px;
     height: 350px;
     padding: 40px 40px 40px 70px;

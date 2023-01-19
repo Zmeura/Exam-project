@@ -28,7 +28,7 @@ body {
   border: 1 solid hsla(0deg, 0%, 100%, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   margin: 0 auto;
-  max-width: 1240px;
+  max-width: 1290px;
   width: 100%;
   position: relative;
   padding-top: 100px;
@@ -42,12 +42,19 @@ body {
 .header,
 .main,
 .footer {
-  padding: 0 35px;
+  padding: 0 60px;
+}
+@media screen and (max-width: 1220px) {
+  .header,
+.main,
+.footer {
+    padding: 0 30px;
+  }
 }
 @media screen and (max-width: 520px) {
   .header,
-  .main,
-  .footer {
+.main,
+.footer {
     padding: 0 15px;
   }
 }
@@ -92,9 +99,7 @@ html {
 }
 
 .burger {
-  opacity: 0;
-  width: 34px;
-  height: 34px;
+  display: none;
 }
 @media screen and (max-width: 820px) {
   .burger:checked ~ .menu {
@@ -118,8 +123,7 @@ html {
 .burger-img {
   display: none;
   cursor: pointer;
-  right: 33px;
-  top: 15px;
+  right: 17px;
 }
 @media screen and (max-width: 820px) {
   .burger-img {
@@ -130,8 +134,7 @@ html {
     background: #000;
     vertical-align: middle;
   }
-  .burger-img::before,
-  .burger-img::after {
+  .burger-img::before, .burger-img::after {
     content: "";
     position: absolute;
     display: inline-block;
@@ -266,6 +269,7 @@ html {
   display: flex;
   position: relative;
   margin-bottom: 100px;
+  padding-bottom: 30px;
 }
 @media screen and (max-width: 1078px) {
   .info {
@@ -299,12 +303,12 @@ html {
   max-width: 770px;
   max-height: 407px;
   position: absolute;
-  top: 64px;
+  top: 86px;
   right: 0;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1220px) {
   .info__img {
-    max-width: 650px;
+    max-width: 690px;
   }
 }
 @media screen and (max-width: 1078px) {
@@ -373,7 +377,7 @@ html {
   font-size: 4.44rem;
   line-height: 110%;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1220px) {
   .title_big {
     font-size: 3rem;
   }
@@ -429,7 +433,7 @@ html {
   right: 323px;
   z-index: 10;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1220px) {
   .features__img {
     max-width: 200px;
     right: 300px;
@@ -455,7 +459,7 @@ html {
   overflow: hidden;
   border: 1px dashed #b78ef0;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1220px) {
   .features-box {
     width: 350px;
     height: 350px;
@@ -522,9 +526,7 @@ html {
   background: url("../img/svg/bg-green.svg") no-repeat;
   background-size: contain;
 }
-.features-box__title,
-.features-box__text,
-.features-box__link {
+.features-box__title, .features-box__text, .features-box__link {
   position: relative;
   z-index: 3;
 }
@@ -564,9 +566,7 @@ html {
     margin-top: 50px;
   }
 }
-.testimonials__title,
-.testimonials__card,
-.testimonials__img {
+.testimonials__title, .testimonials__card, .testimonials__img {
   position: relative;
   z-index: 3;
 }

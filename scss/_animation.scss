@@ -1,33 +1,3 @@
-@keyframes slide-right {
-  0% {
-    transform: translateX(-800px);
-  }
-
-  100% {
-    transform: translateX(0px);
-  }
-}
-
-@keyframes slide-left {
-  0% {
-    transform: translateX(800px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-
-@keyframes nav {
-  0% {
-    transform: scale(150%);
-    color: red;
-  }
-  100% {
-    transform: scale(100%);
-    color: black;
-  }
-}
-
 @keyframes burger {
   from {
     transform: rotate(0deg);
